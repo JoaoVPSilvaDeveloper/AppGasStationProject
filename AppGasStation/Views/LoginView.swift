@@ -21,6 +21,7 @@ struct LoginView: View {
                         .fontWeight(.heavy)
                         .font(.system(size: 50))
                         .padding()
+                        .padding(.bottom)
 
                     TextField("Email", text: $email)
                         .padding()
@@ -62,7 +63,7 @@ struct LoginView: View {
                         .padding()
 
                         
-                        NavigationLink("Sign up".uppercased(), destination: SignupView())
+                        NavigationLink("Sign up".uppercased(), destination: SignupView().navigationBarBackButtonHidden(true))
                             .fontWeight(.bold)
                             .foregroundStyle(.black)
                             .padding()

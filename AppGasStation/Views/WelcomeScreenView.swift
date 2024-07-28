@@ -62,14 +62,15 @@ struct WelcomeScreenView: View {
                     Spacer()
                     
                     VStack {
-                        NavigationLink("Log in".uppercased(), destination: LoginView())
+                        NavigationLink("Log in".uppercased(), destination:
+                            LoginView().navigationBarBackButtonHidden(true))
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
                             .padding()
                             .padding(.horizontal, 100)
                             .background(Color.black).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             
-                        NavigationLink("Sign up".uppercased(), destination: SignupView())
+                        NavigationLink("Sign up".uppercased(), destination: SignupView().navigationBarBackButtonHidden(true))
                             .fontWeight(.bold)
                             .foregroundStyle(.black)
                             .padding()

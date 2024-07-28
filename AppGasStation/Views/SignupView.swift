@@ -9,7 +9,14 @@ import SwiftUI
 
 struct SignupView: View {
     var body: some View {
-        Text("Signup view")
+        NavigationStack {
+            Text("Signup view")
+            
+            
+            
+            NavigationLink("Login", destination: LoginView().navigationBarBackButtonHidden(true))
+            
+        }
     }
 }
 

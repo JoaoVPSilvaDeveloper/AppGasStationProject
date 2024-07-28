@@ -9,62 +9,78 @@ import SwiftUI
 
 struct WelcomeScreenView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                Text("Price Gas Station")
-                    .font(.system(size: 25))
-                    .fontWeight(.heavy)
-                    .padding()
-                    .padding(.bottom)
+        NavigationStack {
+            
+            ZStack {
                 
-                Text("Welcome")
-                    .font(.system(size: 65))
-                    .fontWeight(.heavy)
-                    .padding()
-                    
-                Text("What is the price of gas?")
-                    .font(.system(size: 20))
-                    .fontWeight(.medium)
-                    .padding()
-                
-                
-                Text("Find out where fo till up your car for the")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                Text("lowest price")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                
-                
-                Spacer()
-                
-                
+                //ZStack - Only for bubble design
+                ZStack {
+                    VStack {
+                        Circle()
+                            .scale(1.8)
+                        Circle()
+                            .foregroundStyle(.white)
+                        Circle()
+                            .foregroundStyle(.white)
+                        Circle()
+                            .foregroundStyle(.white)
+                    }
+                }
+
                 VStack {
-                    Button("Log in".uppercased()) {
-                        
-                    }
-                    .fontWeight(.bold)
-                    .foregroundStyle(.white)
-                    .padding()
-                    .padding(.horizontal, 100)
-                    .background(Color.black).clipShape(.buttonBorder).shadow(radius: 10)
+                    Text("Price Gas Station")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 25))
+                        .fontWeight(.heavy)
+                        .padding()
+                        .padding(.bottom)
                     
-                
-                    Button("Sign up".uppercased()) {
+                    Text("Welcome")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 65))
+                        .fontWeight(.heavy)
+                        .padding()
+                    
+                    Spacer()
                         
+                    Text("What is the price of gas?")
+                        .font(.system(size: 20))
+                        .fontWeight(.medium)
+                        .padding()
+                        
+                    
+                    
+                    Text("Find out where fo till up your car for the")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                    Text("lowest price")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                    
+                    
+                    Spacer()
+                    
+                    VStack {
+                        NavigationLink("Log in".uppercased(), destination: LoginView())
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                            .padding()
+                            .padding(.horizontal, 100)
+                            .background(Color.black).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            
+                        NavigationLink("Sign up".uppercased(), destination: SignupView())
+                            .fontWeight(.bold)
+                            .foregroundStyle(.black)
+                            .padding()
+                            .padding(.horizontal, 95)
+                            .background(Color.gray.opacity(0.2)).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     }
-                    .fontWeight(.bold)
-                    .foregroundStyle(.black)
-                    .padding()
-                    .padding(.horizontal, 95)
-                    .background(Color.gray.opacity(0.30)).clipShape(.buttonBorder).shadow(radius: 10)
-                    .padding(.top)
                 }
             }
-      
+            .padding()
         }
-        .padding()
+        
     }
 }
 

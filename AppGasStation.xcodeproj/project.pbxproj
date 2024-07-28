@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		14F4E2D02C51CFA0006B3435 /* AppGasStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */; };
-		14F4E2D22C51CFA0006B3435 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E2D12C51CFA0006B3435 /* ContentView.swift */; };
 		14F4E2D42C51CFA1006B3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F4E2D32C51CFA1006B3435 /* Assets.xcassets */; };
 		14F4E2D72C51CFA1006B3435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F4E2D62C51CFA1006B3435 /* Preview Assets.xcassets */; };
 		14F4E2F32C530B66006B3435 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E2F22C530B66006B3435 /* WelcomeScreenView.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		14F4E2CC2C51CFA0006B3435 /* AppGasStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGasStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGasStationApp.swift; sourceTree = "<group>"; };
-		14F4E2D12C51CFA0006B3435 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14F4E2D32C51CFA1006B3435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F4E2D62C51CFA1006B3435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14F4E2F22C530B66006B3435 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				14F4E2DE2C530A16006B3435 /* ModelView */,
 				14F4E2DD2C530A09006B3435 /* Views */,
 				14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */,
-				14F4E2D12C51CFA0006B3435 /* ContentView.swift */,
 				14F4E2D32C51CFA1006B3435 /* Assets.xcassets */,
 				14F4E2D52C51CFA1006B3435 /* Preview Content */,
 			);
@@ -189,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F4E2FF2C530BC9006B3435 /* PageFilterView.swift in Sources */,
-				14F4E2D22C51CFA0006B3435 /* ContentView.swift in Sources */,
 				14F4E2FB2C530BA8006B3435 /* LocationPermissionView.swift in Sources */,
 				14F4E2FD2C530BBC006B3435 /* FirstPageAppView.swift in Sources */,
 				14F4E3012C530BD7006B3435 /* SettingsPageView.swift in Sources */,

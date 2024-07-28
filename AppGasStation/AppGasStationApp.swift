@@ -11,7 +11,7 @@ import SwiftUI
 struct AppGasStationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeScreenView()
         }
     }
 }

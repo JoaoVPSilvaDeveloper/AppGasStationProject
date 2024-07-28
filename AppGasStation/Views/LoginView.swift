@@ -8,8 +8,76 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
+    
     var body: some View {
-        Text("Login view")
+        NavigationStack{
+            ZStack {
+                VStack {
+                    Spacer()
+                    Text("Welcome \nBack 👋")
+                        .fontWeight(.heavy)
+                        .font(.system(size: 50))
+                        .padding()
+
+                    TextField("Email", text: $email)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    
+                    Spacer()
+                    
+                    VStack {
+                        Button("Log in".uppercased()) {
+                            
+                        }
+                        .padding()
+                        .padding(.horizontal, 100)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .background(Color.black).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        
+                        HStack {
+                            VStack {
+                                Divider()
+                                    .overlay(.gray)
+                            }
+                            Text("OR")
+                                .foregroundStyle(.gray)
+                            
+                            VStack {
+                                Divider()
+                                    .overlay(.gray)
+                            }
+                        }
+                        .padding()
+
+                        
+                        NavigationLink("Sign up".uppercased(), destination: SignupView())
+                            .fontWeight(.bold)
+                            .foregroundStyle(.black)
+                            .padding()
+                            .padding(.horizontal, 95)
+                            .background(Color.gray.opacity(0.2)).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    }
+                    .padding()
+  
+                    
+                }
+            }
+            .ignoresSafeArea()
+            .padding()
+            
+        }
     }
 }
 

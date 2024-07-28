@@ -78,6 +78,7 @@ struct WelcomeScreenView: View {
                     }
                 }
             }
+            .ignoresSafeArea()
             .padding()
         }
         

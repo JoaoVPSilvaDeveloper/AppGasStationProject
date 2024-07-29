@@ -11,7 +11,6 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     
-    
     var body: some View {
         NavigationStack{
             ZStack {
@@ -34,6 +33,13 @@ struct LoginView: View {
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    
+                    Button("Forgot password?") {
+                        
+                    }
+                    .font(.system(size: 14))
+                    .offset(x: 90)
+
                     
                     Spacer()
                     
@@ -71,13 +77,10 @@ struct LoginView: View {
                             .background(Color.gray.opacity(0.2)).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     }
                     .padding()
-  
-                    
                 }
             }
             .ignoresSafeArea()
             .padding()
-            
         }
     }
 }

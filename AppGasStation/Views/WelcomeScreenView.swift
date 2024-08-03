@@ -18,6 +18,7 @@ struct WelcomeScreenView: View {
                     VStack {
                         Circle()
                             .scale(1.8)
+                            .foregroundStyle(.teal)
                         Circle()
                             .foregroundStyle(.white)
                         Circle()
@@ -68,7 +69,7 @@ struct WelcomeScreenView: View {
                             .foregroundStyle(.white)
                             .padding()
                             .padding(.horizontal, 100)
-                            .background(Color.black).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .background(Color.teal).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             
                         NavigationLink("Sign up".uppercased(), destination: SignupView().navigationBarBackButtonHidden(true))
                             .fontWeight(.bold)

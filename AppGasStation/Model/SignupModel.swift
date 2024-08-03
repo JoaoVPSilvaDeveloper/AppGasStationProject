@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
+
+
 
 struct SignupModel: View {
     var body: some View {

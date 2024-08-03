@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1475E1AE2C587FDE00E1786A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1475E1AD2C587FDE00E1786A /* FirebaseAuth */; };
+		1475E1B02C587FDE00E1786A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1475E1AF2C587FDE00E1786A /* FirebaseFirestore */; };
+		1475E1B22C5880E200E1786A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1475E1B12C5880E200E1786A /* GoogleService-Info.plist */; };
+		1475E1B42C5881B800E1786A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475E1B32C5881B800E1786A /* LoginModel.swift */; };
+		1475E1B62C5885A200E1786A /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475E1B52C5885A200E1786A /* SignupModel.swift */; };
+		14E8E8602C5EF39C00B8B1E6 /* GetStartedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E8E85F2C5EF39B00B8B1E6 /* GetStartedModel.swift */; };
 		14F4E2D02C51CFA0006B3435 /* AppGasStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */; };
 		14F4E2D42C51CFA1006B3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F4E2D32C51CFA1006B3435 /* Assets.xcassets */; };
 		14F4E2D72C51CFA1006B3435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F4E2D62C51CFA1006B3435 /* Preview Assets.xcassets */; };
@@ -22,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1475E1B12C5880E200E1786A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1475E1B32C5881B800E1786A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1475E1B52C5885A200E1786A /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		14E8E85F2C5EF39B00B8B1E6 /* GetStartedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedModel.swift; sourceTree = "<group>"; };
 		14F4E2CC2C51CFA0006B3435 /* AppGasStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGasStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGasStationApp.swift; sourceTree = "<group>"; };
 		14F4E2D32C51CFA1006B3435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1475E1AE2C587FDE00E1786A /* FirebaseAuth in Frameworks */,
+				1475E1B02C587FDE00E1786A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +84,7 @@
 				14F4E2DD2C530A09006B3435 /* Views */,
 				14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */,
 				14F4E2D32C51CFA1006B3435 /* Assets.xcassets */,
+				1475E1B12C5880E200E1786A /* GoogleService-Info.plist */,
 				14F4E2D52C51CFA1006B3435 /* Preview Content */,
 			);
 			path = AppGasStation;
@@ -111,6 +124,9 @@
 		14F4E2DF2C530A25006B3435 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1475E1B32C5881B800E1786A /* LoginModel.swift */,
+				1475E1B52C5885A200E1786A /* SignupModel.swift */,
+				14E8E85F2C5EF39B00B8B1E6 /* GetStartedModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +147,10 @@
 			dependencies = (
 			);
 			name = AppGasStation;
+			packageProductDependencies = (
+				1475E1AD2C587FDE00E1786A /* FirebaseAuth */,
+				1475E1AF2C587FDE00E1786A /* FirebaseFirestore */,
+			);
 			productName = AppGasStation;
 			productReference = 14F4E2CC2C51CFA0006B3435 /* AppGasStation.app */;
 			productType = "com.apple.product-type.application";
@@ -157,8 +177,13 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				"es-419",
 			);
 			mainGroup = 14F4E2C32C51CFA0006B3435;
+			packageReferences = (
+				1475E1AC2C587FDE00E1786A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 14F4E2CD2C51CFA0006B3435 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -175,6 +200,7 @@
 			files = (
 				14F4E2D72C51CFA1006B3435 /* Preview Assets.xcassets in Resources */,
 				14F4E2D42C51CFA1006B3435 /* Assets.xcassets in Resources */,
+				1475E1B22C5880E200E1786A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F4E2FF2C530BC9006B3435 /* PageFilterView.swift in Sources */,
+				14E8E8602C5EF39C00B8B1E6 /* GetStartedModel.swift in Sources */,
 				14F4E2FB2C530BA8006B3435 /* LocationPermissionView.swift in Sources */,
 				14F4E2FD2C530BBC006B3435 /* FirstPageAppView.swift in Sources */,
+				1475E1B42C5881B800E1786A /* LoginModel.swift in Sources */,
 				14F4E3012C530BD7006B3435 /* SettingsPageView.swift in Sources */,
 				14F4E2F92C530B95006B3435 /* GetStartedView.swift in Sources */,
 				14F4E2F32C530B66006B3435 /* WelcomeScreenView.swift in Sources */,
@@ -195,6 +223,7 @@
 				14F4E2F52C530B77006B3435 /* LoginView.swift in Sources */,
 				14F4E2D02C51CFA0006B3435 /* AppGasStationApp.swift in Sources */,
 				14F4E2F72C530B88006B3435 /* SignupView.swift in Sources */,
+				1475E1B62C5885A200E1786A /* SignupModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -310,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -334,8 +363,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +372,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vitorsilva.AppGasStation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,8 +396,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +405,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vitorsilva.AppGasStation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -400,6 +437,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1475E1AC2C587FDE00E1786A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1475E1AD2C587FDE00E1786A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1475E1AC2C587FDE00E1786A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1475E1AF2C587FDE00E1786A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1475E1AC2C587FDE00E1786A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14F4E2C42C51CFA0006B3435 /* Project object */;
 }

@@ -33,3 +33,18 @@ struct OnboardView: View {
     }
 }
 
+struct buttonGetStarted: View {
+    
+    var body: some View {
+        NavigationStack {
+            VStack {
+                NavigationLink("Get Started", destination: FirstPageAppView().navigationBarBackButtonHidden(true))
+                    .padding()
+                    .padding(.horizontal, 100)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
+                    .background(Color.teal).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            }
+        }
+    }
+}

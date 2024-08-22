@@ -21,6 +21,8 @@ struct GetStartedView: View {
             OnboardView(systemImageName: "arrow.triangle.branch", 
                         title: "Filter stations by type of",
                         description: "Gas | Rice | Location")
+            
+            buttonGetStarted()
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(.page(backgroundDisplayMode: .always))

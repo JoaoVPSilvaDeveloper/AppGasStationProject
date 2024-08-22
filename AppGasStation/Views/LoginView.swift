@@ -21,6 +21,7 @@ struct LoginView: View {
                         .font(.system(size: 50))
                         .padding()
                         .padding(.bottom)
+                        .foregroundStyle(.teal)
 
                     TextField("Email", text: $email)
                         .padding()
@@ -51,7 +52,7 @@ struct LoginView: View {
                         .padding(.horizontal, 100)
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
-                        .background(Color.black).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                        .background(Color.teal).clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         
                         HStack {
                             VStack {

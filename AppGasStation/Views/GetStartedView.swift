@@ -9,9 +9,27 @@ import SwiftUI
 
 struct GetStartedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            OnboardView(systemImageName: "fuelpump.fill", 
+                        title: "fill up at the lowest price", 
+                        description: "Find out how much gas is available")
+            
+            OnboardView(systemImageName: "dollarsign.arrow.circlepath", 
+                        title: "Save Money",
+                        description: "Save by refueling at the lowest price")
+            
+            OnboardView(systemImageName: "arrow.triangle.branch", 
+                        title: "Filter stations by type of",
+                        description: "Gas | Rice | Location")
+            
+            buttonGetStarted()
+        }
+        .tabViewStyle(.page(indexDisplayMode: .always))
+        .indexViewStyle(.page(backgroundDisplayMode: .always))
+        
     }
 }
+
 
 #Preview {
     GetStartedView()

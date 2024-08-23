@@ -12,6 +12,7 @@
 		1475E1B22C5880E200E1786A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1475E1B12C5880E200E1786A /* GoogleService-Info.plist */; };
 		1475E1B42C5881B800E1786A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475E1B32C5881B800E1786A /* LoginModel.swift */; };
 		1475E1B62C5885A200E1786A /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475E1B52C5885A200E1786A /* SignupModel.swift */; };
+		14919E512C7821F400C8CDE2 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14919E502C7821F400C8CDE2 /* ForgotPassword.swift */; };
 		14E8E8602C5EF39C00B8B1E6 /* GetStartedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E8E85F2C5EF39B00B8B1E6 /* GetStartedModel.swift */; };
 		14F4E2D02C51CFA0006B3435 /* AppGasStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */; };
 		14F4E2D42C51CFA1006B3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F4E2D32C51CFA1006B3435 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		1475E1B12C5880E200E1786A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1475E1B32C5881B800E1786A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		1475E1B52C5885A200E1786A /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		14919E502C7821F400C8CDE2 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		14E8E85F2C5EF39B00B8B1E6 /* GetStartedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedModel.swift; sourceTree = "<group>"; };
 		14F4E2CC2C51CFA0006B3435 /* AppGasStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGasStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F4E2CF2C51CFA0006B3435 /* AppGasStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGasStationApp.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				14F4E2F22C530B66006B3435 /* WelcomeScreenView.swift */,
 				14F4E2F42C530B76006B3435 /* LoginView.swift */,
+				14919E502C7821F400C8CDE2 /* ForgotPassword.swift */,
 				14F4E2F62C530B88006B3435 /* SignupView.swift */,
 				14F4E2F82C530B95006B3435 /* GetStartedView.swift */,
 				14F4E2FA2C530BA8006B3435 /* LocationPermissionView.swift */,
@@ -222,6 +225,7 @@
 				14F4E3032C530BEC006B3435 /* ShowGasStationPressedView.swift in Sources */,
 				14F4E2F52C530B77006B3435 /* LoginView.swift in Sources */,
 				14F4E2D02C51CFA0006B3435 /* AppGasStationApp.swift in Sources */,
+				14919E512C7821F400C8CDE2 /* ForgotPassword.swift in Sources */,
 				14F4E2F72C530B88006B3435 /* SignupView.swift in Sources */,
 				1475E1B62C5885A200E1786A /* SignupModel.swift in Sources */,
 			);

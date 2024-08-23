@@ -35,9 +35,7 @@ struct LoginView: View {
                         .background(Color.black.opacity(0.05))
                         .clipShape(.buttonBorder).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     
-                    Button("Forgot password?") {
-                        
-                    }
+                    NavigationLink("Forgot password?", destination: ForgotPassword())
                     .font(.system(size: 14))
                     .offset(x: 90)
 
